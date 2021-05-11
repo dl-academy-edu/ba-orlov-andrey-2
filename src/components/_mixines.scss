@@ -1,0 +1,69 @@
+@import "_variables.scss";
+//$debug: true;
+
+/*Open Sans*/
+@mixin o($x,$y,$z){
+font-family: 'Open Sans', Arial, sans-serif;
+font-style: normal;
+@if $debug {color: $x;}
+font-size: $y;
+line-height: $z;
+}
+@mixin o400n($x,$y,$z){
+	@include o($x,$y,$z);
+	font-weight:400;
+}
+@mixin o700n($x,$y,$z){
+	@include o($x,$y,$z);
+	font-weight:700;
+}
+
+
+/*Montserrat*/
+@mixin m($x,$y,$z){
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-style: normal;
+	@if $debug {color: $x;}
+	font-size: $y;
+	line-height: $z;
+}
+
+@mixin m300n($x,$y,$z){
+	@include m($x,$y,$z);
+	font-weight:300;	
+}
+@mixin m600n($x,$y,$z){
+	@include m($x,$y,$z);
+	font-weight:600;
+}
+@mixin m700n($x,$y,$z){
+	@include m($x,$y,$z);
+	font-weight:700;
+}
+
+/*Crimson Text*/
+@mixin c($x,$y,$z){
+	font-family: 'Crimson Text', 'georgia', serif;
+	font-style: italic;
+	@if $debug {color: $x;}
+	font-size: $y;
+	line-height: $z;
+}
+@mixin c400i($x,$y,$z){
+	@include c($x,$y,$z);
+	font-weight:400;
+}
+@mixin c700i($x,$y,$z){
+	@include c($x,$y,$z);
+	font-weight:700;
+}
+
+/*Roboto*/
+@mixin r400n($x,$y,$z) {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight:400;
+  font-style: normal;
+  @if $debug {color: $x;}
+  font-size: $y;//14px;
+  line-height: $z;//19px;
+}

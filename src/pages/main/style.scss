@@ -1,94 +1,4 @@
-
-/* SLIDER */
-.slider {
-	display: flex;
-	position: relative; 
-	height:411px;
-	background: #EEE4DB;
-	margin-top:69px;
-}
-.slider-counter {
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-weight:300;
-	font-style: normal;
-	font-size: 60px;
-	line-height: 73px;
-	color: rgba(30, 6, 6, 0.05);
-	padding: 0px;
-	margin:18px 44px 0 29px;
-}
-.poster {
-	position: absolute; 
-	right:100px; 
-	bottom:9px;
-}
-
-/* burger */
-.slider button {
-	border: 0px;
-	padding:0;
-	margin:0;
-	width:31px;
-	height:3px;
-	background: #D6CAC2;
-}
-.slider button:hover,
-.slider li:first-child button {
-	background: #725F5B;
-}        
-.slider button:hover {
-	background: #725F5B;
-} 
-
-.slider ul {
-	padding:0px;
-	margin: 7px 0 0 27px;
-}
-.slider li {
-	padding: 0;
-	margin:-8px 4px 4px 4px;
-}
-
-.slider-text h1 {
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-weight:700;
-	font-style: normal;
-	font-size: 40px;
-	line-height: 110%; 
-	width: 67%;
-	color: #1e0606;
-	padding:0px;
-	margin: 92px 0 0 0;
-}
-.slider-text p {
-	font-family: 'Crimson Text', Georgia, serif;
-	font-weight:400;
-	font-style: italic;
-	font-size: 20px;
-	line-height: 25%;
-	color: #1e0606;
-	padding: 0px;
-	margin: 29px 0 0 0;
-}
-
-.slider-footer {
-	position: absolute;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 100%;
-	bottom: 0px;
-	height: 39px;
-	background: #C29974;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight:700;
-	font-style: normal;
-	font-size: 12px;
-	line-height: 16px;
-	color: #FFFFFF;
-	text-transform: uppercase;
-}
-
+@import "../../components/variables";
 /* BUTTONS */
 .btn {
 	display: flex;
@@ -107,6 +17,7 @@
     text-transform: uppercase;    
 	padding: 0px;
 	margin: 29px 0 0 0;
+	transition: background-color $duration;
 }
 .btn:hover {
 	background: #C29974;
@@ -139,6 +50,7 @@
 	color: #1E0606;
 	margin-top: 91px;
 }
+h2,
 .goods h2 {
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-weight:700;

@@ -1,0 +1,22 @@
+$none1: red;
+$none2: transparent;
+.brands__wr {
+  display: flex;
+  margin: 105px auto 147px auto; 
+  background: $none2;
+  max-width: 1180px; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+  ul {
+  width: 100%;
+    
+  }
+  a {
+    :hover {opacity: 0.5;}
+    :active {opacity: 0.2;}
+  }
+}

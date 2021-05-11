@@ -1,4 +1,6 @@
 /* HEADER */
+@import '../../components/_variables';
+
 .header {
   padding: 50px 0 56px 0;
   display: flex;
@@ -35,6 +37,7 @@ word-spacing: 3px;
 
 .header a {
   color: #1E0606;
+  transition: opacity $duration;
 }
 
 .header a:hover { 

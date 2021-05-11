@@ -1,6 +1,27 @@
-// Подключение компонентов
+//@import "./r1/r1";
+//@import "./r2/r2";
+//@import "./r3/r3";
+@import "./brands/brands";
+@import "./dlvr/dlvr";
+@import "./goods/goods";
+@import "./about/about";
+@import "./banner/banner";
+//@import "./banner1/banner1";
+//@import "./banner2/banner2";
+
+@import "./modal/modal";
+@import "./button100/button100";
+
 @import "./header/header";
 @import "./footer/footer";
+@import "./footer1/footer1";
+@import "./footer2/footer2";
+@import "./cardgoods/cardgoods";
+@import "./_variables.scss";
+@import "./h1general/h1general";
+
+@import "./bc_svg/bc_svg";
+@import "./star/star";
 
 /* ALL */
 *, 
@@ -33,7 +54,8 @@ ul {
 	list-style-type: none;
 }
 
-/* BUTTON */
+/* BUTTON кнопка join */
+
 .button {
   font-weight: bold;
   font-size: 16px;
@@ -44,9 +66,11 @@ ul {
   color: #FFFFFF;
   border: 0;
   cursor: pointer;
+	transition: background-color $duration;
 }
 .button:hover {
   background-color: #C29974;
+	@if $debug {background-color: red;}
 }
 .button:active {
   background-color: #CFAF91;
@@ -56,6 +80,8 @@ background: #C1C1C1;
 color: #E1E1E1;
 cursor: inherit;
 }
+
+
 
 /* BREADCRUMBS */	
 .breadcrumbs h1 {
@@ -187,5 +213,9 @@ cursor: inherit;
 	color: rgba(30,06,06,0.5);
 }
 
+
+// Подключение компонентов
+
+//@import "./pag1button/pag1button";
 
 

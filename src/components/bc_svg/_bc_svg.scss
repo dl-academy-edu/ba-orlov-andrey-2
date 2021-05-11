@@ -1,0 +1,49 @@
+@import '../../components/_variables.scss';
+//$debug: true;
+$debug: false;
+
+
+.bc_items {	
+	display: flex;
+	font-family: 'Crimson Text', Georgia, serif;
+	font-weight:400;
+	font-style: italic;
+	font-size: 20px;
+  @if $debug {font-size: 120px;} @else {font-size: 20px;}
+	line-height: 1px;
+	text-transform: capitalize;
+	
+  @if $debug {color: red;} @else {color: #1E0606;}
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 0px;
+  
+}
+
+.bc_items a {
+	padding-right: 48px;
+	position: relative;
+  transition: all $duration;
+}
+
+.bc_items span {
+	opacity: 0.5;
+}
+
+.bc_items a:hover {
+	opacity: 0.5;
+}
+.bc_items a:active {
+	opacity: 0.2;
+}
+
+.bc_items a:after {
+	content: "";
+	display: block;
+	width: 8px; 
+	height: 12px;
+	background-image: url(../../static/images/vector.svg);
+	position: absolute;
+	bottom: -4px;
+	right: 18px;	  
+}
