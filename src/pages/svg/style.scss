@@ -1,0 +1,46 @@
+$color: #5f42e0;
+$debug: 1==1;
+
+//$debug: false;
+@import "../../components/_variables.scss";
+$debug: true;//
+//$duration: 2s;
+@import "../../components/common.scss";
+@import "../../pages/main/style.scss";
+
+//$debug: true;
+.svg_caption_wr {
+@if $debug {background: coral;}@else{background: transparent}
+padding-top: 20px;
+padding-bottom: 0px;
+}
+.svg_bc_wr {
+@if $debug {background: rgb(85, 27, 221)}@else{background: transparent}
+padding-top: 29px;
+padding-bottom: 1px;
+}
+
+.icon_wr {
+@if $debug {background: rgb(61, 85, 34);}@else{background: transparent}
+padding-top: 39px;
+padding-left: 0px;
+padding-bottom: 36px;
+
+}
+.icon {
+@if $debug {background: rgb(80, 103, 163);}@else{background: transparent}
+padding-top: 0px;
+padding-left: 0px;
+padding-bottom: -1px;
+transform: translateX(-20px);
+}
+.svg {cursor: pointer;}
+.svg .move{ transition: all 1s ;stroke-width:14; stroke-linecap:round}
+.svg:hover .move{ transform: translateX(-10px); }
+
+.svg_wr {
+@if $debug {background: violet;}@else{background: transparent}
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+.svg:hover .move{ transform: translateX(-10px); }
+}

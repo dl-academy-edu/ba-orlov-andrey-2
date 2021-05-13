@@ -1,0 +1,106 @@
+// избавился от маргинов
+
+
+
+@import "../_variables.scss";
+@import "../mixines";
+$debug: false;
+
+.banner-wrapper {	
+	padding: 69px 0px 0px 0px;
+}
+
+.banner {/**/
+	position:relative;
+	display:flex;
+	height:411px;
+	background: #EEE4DB;
+	@if $debug {background:rgb(51, 163, 6);}		
+
+
+&__counter {	
+	background: transparent;
+	@if $debug {background: rgb(252, 249, 250);}
+	padding: 0px 0px -1px -100px;
+}
+
+&__p {/*01*/
+		color: rgba(30, 6, 6, 0.05);
+		@include m300n(rgb(26, 165, 135),60px,1px);/* font m300n color size line*/
+		margin: 53px 44px 0px 29px;
+		padding: 0px;		
+		cursor: pointer;
+	}
+&__ul {/*жабры*/
+	  width: 33px;
+		margin: 7px 0px 0px 27px;
+		padding:36px 0px 0px 0px;
+
+	}
+&__li {
+		margin: -8px 4px 4px 4px;
+		padding: 0;
+
+	}
+&__button
+  { /*жабры*/
+    width:31px;
+    height:3px;//3px;
+    background: #D6CAC2;
+    @if $debug {background: rgb(42, 61, 61);}
+		border: 0px solid transparent;
+		padding:0;
+  	cursor: pointer;
+    transition: background-color $duration;
+  
+		&:hover {
+			background: #725F5B;
+			@if $debug {background: rgb(173, 175, 27);
+		}
+  } 
+}
+
+
+&__button_active {/*бургер верх*/
+	background: #725F5B;
+	@if $debug {background: rgb(233, 143, 151);
+	}
+} 
+
+
+&__slogan {/*THE OOH NOO*/
+	width:45%;
+	background: transparent;
+	@if $debug {background: rgb(89, 63, 204);} 	
+	padding: 92px 1px 0px 0px;
+}
+&__h1 {
+	color: #1e0606; 
+	@include m700n(rgb(207, 207, 13),40px,110%);
+}
+&__country {/*Designed in Slovenia*/
+	@include c400i(rgb(18, 151, 168),20px,25%);
+	padding: 9px 1px 0px 0px;
+}
+
+&__img {	
+	position: absolute; 
+	right:100px; 
+	bottom:11px;
+}
+
+&__bottom {/*Free (continental) USA*/
+	position: absolute;
+	width:100%;
+	height:39px;
+	bottom:0;
+	left:0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #C29974;
+	color: #FFFFFF;
+	@include o700n(rgb(117, 85, 206),12px,16px);/*font*/
+	text-transform: uppercase;
+}
+}

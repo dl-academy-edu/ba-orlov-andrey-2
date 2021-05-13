@@ -1,0 +1,26 @@
+// бренды
+@import "../mixines";
+@import "../variables";
+$debug: false;
+
+.brands-wrapper {
+  padding: 100px 0px 0px 0px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  @if $debug {background: red;}@else{background: transparent;}
+  
+  
+  &__ul {
+  width: 100%;
+    
+  }
+  &__a {
+    transition: opacity $duration;
+    &:hover {opacity: 0.5;}
+    &:active {opacity: 0.2;}
+  }
+}

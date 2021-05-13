@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css"><!-- важно -->
+    <title>SVG Page</title>	
+</head>
+<body>
+
+    <!--@-@include('header/index.html',{'academy':'/academy'})-->
+    @@include('header/index.html',{'academy':''})
+
+    <main>
+<div class="svg_caption_wr">       
+        <section class="container">
+	@@include('h1general/index.html',{'name':'svg animation'})
+ </section>
+</div> 
+
+<div class="svg_bc_wr">
+    @@include('bc_svg/index.html',{'academy':'/academy'})
+</div>
+
+ <div class="icon_wr">
+    <section class="container icon">
+        <div class="svg_wr">
+            <svg class="svg" width="458" height="391" viewBox="0 0 458 391" fill="none">
+            <g>
+            <rect x="42" y="46.9999" width="187" height="324" fill="#656D78" title="центральное меню"/>
+            <rect x="41" y="46.9999" width="1" height="324" fill="#6C747F" title="вертикальная граница"/>
+            <rect x="20" y="46.9999" width="21" height="324" fill="#545C66" title="левый сайдбар" />
+            <path class="move" d="M67 343H109" stroke="#5D9CEC" stroke-width="14" stroke-linecap="round" title="пункт 11-1"/>
+            <path class="move" d="M80 316L176 316" stroke="#A0D468" stroke-width="14" stroke-linecap="round" title="пункт 10-1"/>
+            <path class="move" d="M94 289H156" stroke="#ED5565" title="пункт 9-1"/>
+            <path class="move" d="M107 262H196" stroke="#FFCE54" title="пункт 8-1"/>
+            <path class="move" d="M107 235H230" stroke="#CCD1D9" title="пункт 7-1"/>
+            <path class="move" d="M154 208H230" stroke="#CCD1D9" title="пункт 6-2"/>
+            <path class="move" d="M107 208H129" stroke="#CCD1D9" title="пункт 6-1"/>
+            <path class="move" d="M107 181H183" stroke="#CCD1D9" title="пункт 5-1"/>
+            <path class="move" d="M107 154H230" stroke="#FFCE54" title="пункт 6-2"/>
+            <path class="move" d="M148 128H230" stroke="#ED5565" title="пункт 3-2"/>
+            <path class="move" d="M94 128H122" stroke="#ED5565" title="пункт 3-1"/>
+            <path class="move" d="M80 101L210 101" stroke="#A0D468" title="пункт 2-1"/>
+            <path class="move" d="M67 73.9999L196 73.9999" stroke="#5D9CEC"  title="пункт 1-1"/>
+            <path d="M35 20H423C432.5 20 438 25.5 438 35V47H20V35C20 25.4999 25.5 20 35 20Z" fill="#CCD1D9" title="шапка"/>
+            <rect x="229" y="46.9999" width="209" height="324" fill="#E6E9ED" title="правый сайдбар"/>
+            <path d="M229 66.9999H411C414.866 66.9999 418 70.1339 418 73.9999V182C418 185.866 414.866 189 411 189H229V66.9999Z" fill="#5D9CEC" title="верхнее фото"/>
+            <path d="M255 336C251.134 336 248 339.134 248 343C248 346.866 251.134 350 255 350V336ZM337 350C340.866 350 344 346.866 344 343C344 339.134 340.866 336 337 336V350ZM255 350H337V336H255V350Z" fill="#CCD1D9" title="подпись-2"/>
+            <path d="M255 309C251.134 309 248 312.134 248 316C248 319.866 251.134 323 255 323V309ZM411 323C414.866 323 418 319.866 418 316C418 312.134 414.866 309 411 309V323ZM255 323H411V309H255V323Z" fill="#CCD1D9" title="подпись-1"/>
+            <rect x="249" y="208" width="169" height="88" rx="5" fill="#5D9CEC" title="нижнее фото"/>
+            <path d="M326.5 254C327.095 254 329.25 254 331 256L358.5 296H293.5L322 256C323.75 254 325.905 254 326.5 254Z" fill="#545C66" title="гора-3"/>
+            <path d="M363.5 241C364.095 241 366.25 241 368 243L406 296H320L359 243C360.75 241 362.905 241 363.5 241Z" fill="#656D78" title="гора-4"/>
+            <circle cx="283" cy="235.5" r="11" fill="#FFCE54" title="солнце"/>
+            <path d="M296 133C296.436 133 297.463 132.959 298.927 134.474L348.5 189L246 189L293.167 134.474C294.537 132.959 295.564 133 296 133Z" fill="#545C66" title="гора-1"/>
+            <path d="M343 113C343.595 113 345 112.944 347 115L405.5 189H282.5L339.128 115C341 112.944 342.405 113 343 113Z" fill="#656D78" title="гора-2"/>
+            </g>
+            </svg>
+        </div>
+    </section>
+
+ </div>
+    </main>
+    @@include('footer/index.html')
+
+</body>
+</html>

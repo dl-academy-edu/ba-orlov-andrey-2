@@ -1,0 +1,116 @@
+@import "../../components/_variables";
+$debug: false;
+
+
+
+/* FOOTER */
+
+
+.footer h3 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #AAAAAA;
+	margin:0px 0px 22px 0px;
+}
+
+.footer ul {
+	padding:0;
+	width: 100%;
+	@if $debug {border-top: 1px solid #350707;}@else{border-top: 1px solid #666666;}
+}
+
+.footer li{
+	margin: 15px 0px 0px 0px;
+}
+.footer li:first-child {
+	margin: 28px 0px 0px 0px;
+}
+.footer-column li:last-child {
+	margin: 15px 0px 29px 0px;
+}
+
+.top-div {
+	display: flex;
+	justify-content: space-between;
+}
+.top-div div,
+.bottom-div div {
+	width: 380px;
+}
+
+		
+
+/* footer-column a */
+.footer-column a{
+	color: #FFFFFF;
+	transition: opacity $duration;
+	&:hover{
+		opacity: 0.5;
+	}
+	&:active{
+		opacity: 0.2;
+	}
+}
+/* footer-social a */
+.footer-social a {
+	opacity: 1;
+	text-decoration: none;
+	margin-right: 6px;
+	transition: opacity $duration;
+	&:hover {
+		opacity: 0.5;
+	}
+	&:active {
+		opacity: 0.2;
+	}
+}
+
+
+
+
+.social {
+	display: block;
+}
+.footer-social {
+	margin-top: 25px;
+}
+
+.footer-button {
+    width: 81px;
+    height: 40px;
+	margin-left: -11px;
+	margin-top:-1px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight:700;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+.footer-edit {
+    width: 305px;
+    height: 40px;
+    padding: 9px 13px 9px 13px;
+    color: #EBEBEB;
+    background-color: #666666;
+		border: none;
+		/****************/
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-weight:400;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 22px;
+		border: 1px solid transparent;
+		transition: border $duration;
+
+	&:hover,
+	&:active {
+			border: 1px solid #FFFDFD;
+	}
+	&::placeholder {
+		color: #EBEBEB;
+	}
+}
+

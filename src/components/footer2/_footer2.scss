@@ -1,0 +1,138 @@
+@import "../../components/_variables";
+$debug: false;
+
+
+
+/* FOOTER */
+
+
+.footer h3 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #AAAAAA;
+	margin:0px 0px 22px 0px;
+}
+
+.footer ul {
+	padding:0;
+	width: 100%;
+	
+}
+
+.footer li{
+	margin: 15px 0px 0px 0px;
+}
+.footer li:first-child {
+	margin: 28px 0px 0px 0px;
+}
+.footer-column li:last-child {
+	margin: 15px 0px 29px 0px;
+}
+
+.top-div {
+	display: flex;
+	justify-content: space-between;
+
+}
+.top-div div,
+.bottom-div div {
+	width: 380px;
+}
+
+		
+
+/* footer-column a */
+.footer-column a{
+	color: #FFFFFF;
+	transition: opacity $duration;
+	&:hover{
+		opacity: 0.5;
+	}
+	&:active{
+		opacity: 0.2;
+	}
+}
+
+/* footer-web a */
+ .footer-web {
+	color: #A2A2A2;
+	text-decoration: none;
+	transition: all $duration;
+
+		&:hover,
+		&:active {
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+}  
+
+.bottom-div {
+	display: flex;
+	justify-content: space-between;
+	@if $debug
+	{border-top: 1px solid #140101;}
+	@else
+	{border-top: 1px solid #666666;}
+	padding: 22px 0px 0px 0px;
+}
+.rating-box {
+	display:flex;justify-content: space-between;
+
+	@if $debug {background: rgb(6, 99, 79);}
+}
+
+
+/* Stars */
+.footer .stars {
+	margin-left: 27px;
+}
+.star {
+	width: 280px;
+	height: 30px;
+	display: flex;
+	flex-direction: row-reverse;
+	background: #434343;
+	@if $debug {background: #8a0c47;}
+	margin-right:0px;
+
+}
+.star svg:hover path {
+	fill: #836E5B;
+}
+.star label:hover ~ label svg path {
+	fill: #836E5B;
+}
+.star .radio:checked ~ label svg path {
+	fill: #836E5B;
+}
+.star .radio:checked ~ * {
+	color:#836E5B;
+}
+.star-span {
+	display: inline;/*flex;*/
+	width: 5px;
+	margin-right: 0px;
+	color: #FFFFFF;
+	@if $debug {background: #5c0c8a;}
+
+}
+.star .radio:focus + label {
+	color: #836E5B;
+	border-color: #FFFFFF;	
+}
+.star label {
+	width:16px;
+	margin-left:2px;
+	height:18px;
+	line-height: 16px;
+	border: 1px solid transparent;
+	border-radius: 30%;
+	cursor: pointer;
+}
+
+.star label:hover ~ * {
+	color:#836E5B;
+}

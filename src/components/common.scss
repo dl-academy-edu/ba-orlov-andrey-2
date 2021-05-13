@@ -1,0 +1,221 @@
+//@import "./r1/r1";
+//@import "./r2/r2";
+//@import "./r3/r3";
+@import "./brands/brands";
+@import "./dlvr/dlvr";
+@import "./goods/goods";
+@import "./about/about";
+@import "./banner/banner";
+//@import "./banner1/banner1";
+//@import "./banner2/banner2";
+
+@import "./modal/modal";
+@import "./button100/button100";
+
+@import "./header/header";
+@import "./footer/footer";
+@import "./footer1/footer1";
+@import "./footer2/footer2";
+@import "./cardgoods/cardgoods";
+@import "./_variables.scss";
+@import "./h1general/h1general";
+
+@import "./bc_svg/bc_svg";
+@import "./star/star";
+
+/* ALL */
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1180px; 
+	width: 100%; 
+	margin: 0 auto;}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+			clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;		
+}
+a {
+	text-decoration: none; 
+	color: #1E0606;
+}
+ul {
+	list-style-type: none;
+}
+
+/* BUTTON кнопка join */
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  background: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+	transition: background-color $duration;
+}
+.button:hover {
+  background-color: #C29974;
+	@if $debug {background-color: red;}
+}
+.button:active {
+  background-color: #CFAF91;
+}
+.button:disable {
+background: #C1C1C1;
+color: #E1E1E1;
+cursor: inherit;
+}
+
+
+
+/* BREADCRUMBS */	
+.breadcrumbs h1 {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-weight:700;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	margin: 0px;
+	margin-bottom: 18px;
+	padding: 0px;
+}
+
+.breadcrumbs-items {	
+	display: flex;
+	font-family: 'Crimson Text', Georgia, serif;
+	font-weight:400;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #1E0606;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 48px;
+}
+
+.breadcrumbs-items a {
+	padding-right: 48px;
+	position: relative;
+}
+
+.breadcrumbs-items span {
+	opacity: 0.5;
+}
+
+.breadcrumbs-items a:hover {
+	opacity: 0.5;
+}
+.breadcrumbs-items a:active {
+	opacity: 0.2;
+}
+
+.breadcrumbs-items a:after {
+	content: "";
+	display: block;
+	width: 8px; 
+	height: 12px;
+	background-image: url(../static/images/vector.svg);
+	position: absolute;
+	bottom: 7px;
+	right: 18px;	  
+}
+
+/* PAGINATION */
+.pagination-bar {
+	margin-bottom: 47px;
+}	
+
+.pagination-list {
+	padding-right: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.pagination-page {
+	padding-right: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.pagination-list button {
+	border: none;
+}
+
+.pagination-btn {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.pagination-btn:hover path {
+    fill: #C29974;
+}
+.pagination-btn:active path {
+    opacity: 0.5;
+}
+
+
+.transform {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+
+.pagination-page button {
+	background: none;
+	width:75px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-weight:700;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	outline: 5px solid trasparent;
+}
+
+
+.pagination-page button:focus {
+	outline-color: #000000;
+}
+
+
+.pagination-selected {
+    color: #C29974;
+}
+.pagination-selected:hover {
+	color: rgba(194,153,116,0.5);
+}
+
+.pagination-unselected {
+   color: #1E0606;
+}
+.pagination-unselected:hover {
+	color: rgba(30,06,06,0.5);
+}
+
+
+// Подключение компонентов
+
+//@import "./pag1button/pag1button";
+
+
